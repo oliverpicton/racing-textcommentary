@@ -1,0 +1,21 @@
+HOST: http://A701DFE4D59B64D16818680B5F39B6E4B:3C8516DD83DA1404F97B1D1E5283BD991E9572BE8BBB3826F77C05CB15C3DD36@racing-textcommentary.cloudapp.net/api/v1
+
+--- Racing Commentary API - Documentation - v1---
+---
+Welcome to the our Racing text commentary API documentation. All comments can be written in (support [Markdown](http://daringfireball.net/projects/markdown/syntax) syntax)
+---
+
+--
+Race Resources
+The following is a section of resources related to races
+--
+
+GET /race/{id}
+< 200
+< Accept: application/json
+{{"id":398336,"title":"Olly Murs At Kempton Park 17.08.2012 Handicap","time":"2012-04-30T14:15:00","class":6,"handicap":true,"maxrunners":14,"previewcomment":"Sergeant Troy let down favourite-backers at Wolverhampton but that 7f was too sharp and he will be seen to better effect at this distance. In contrast, MATAVIA BAY found a mile and a quarter beyond him on his Lingfield return but was in contention until stamina became an issue, and he has fitness on his side now. Prince Of Passion finished ahead of Karate and Gallantry over C&D recently and is the pick of the remainder.","state":"Card","eligibility":"4YO plus","meeting":{"href":"/meeting/47897"},"type":{"id":1,"type":"Flat"},"track":{"id":4,"type":"Polytrack"},"distance":{"id":583,"unit":"yards","value":1760,"description":"1m  "}}
+
+Gets meetings between 2 dates
+GET /meeting{?from,to}
+< 200
+< Accept: application/json
